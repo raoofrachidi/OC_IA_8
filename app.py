@@ -72,7 +72,7 @@ def predict():
         return iou_metric
 
     model = load_model(
-        model_path + '/final_model.h5',
+        'final_model/final_model.h5',
         custom_objects={
             "loss": balanced_cross_entropy(0.3),
             "dice_coef": dice_coef,
