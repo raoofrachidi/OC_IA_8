@@ -1,9 +1,10 @@
-numpy
-matplotlib
-tensorflow
-flask
+numpy~=1.22.2
+matplotlib~=3.5.1
+tensorflow~=2.8.0
+flask~=2.0.2
 opencv-python-headless
 gunicorn
 pillow
 colorama
 requests
+six~=1.16.0
