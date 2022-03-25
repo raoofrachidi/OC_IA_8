@@ -34,7 +34,6 @@ def predict():
     # Return selected file
     file = request.form['file']
     image_path = str('./static/images/' + file)
-    mask_path = str('./static/masks/' + file)
 
     # Function to compute dice coefficient
     def dice_coef(y_true, y_pred, smooth=1):
@@ -79,11 +78,6 @@ def predict():
             "iou": iou,
         }
     )
-
-    # Load and process mask
-    mask = img_to_array(load_img(mask_path, target_size=(img_height, img_width), color_mode="grayscale"))
-    mask = np.squeeze(mask)
-    plt.imsave('./static/outputs/colorized_mask.png', mask, cmap='nipy_spectral_r')
 
     # Predict from image
     seg_img = infer(
