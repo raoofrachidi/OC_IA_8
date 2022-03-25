@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <title>Future Vision Transport</title>
 </head>
-<body style="text-align: center; align-items: center; justify-content: center">
+<body style="text-align: center; align-items: center; justify-content: center; background-color: #de2371">
 
     <header>
         <div class="container" style="height: 200px; display: flex; align-items: center; justify-content: center">
-            <div class="item">
+            <div class="item" style="font-family: 'Open Sans', serif">
                 <h1>Future Vision Transport</h1>
                 <h2>Image segmentation for autonomous vehicles</h2>
                 <h3>Demo - Flask API deployed with Azure App Service</h3>
@@ -18,14 +18,16 @@
 
    <main>
        <form action="/predict" method="post">
-            <label for="file_select"><h3>Please choose an image in the list</h3></label>
+            <label for="file_select">
+                <h3 style="font-family: 'Open Sans', serif">Please choose an image in the list</h3>
+            </label>
 
-            <select name="file" id="file_select">
+            <select name="file" id="file_select" style="height: 30px">
                 {% for file in file_list %}
                 <option value= "{{file}}" SELECTED>{{file}}</option>
                 {% endfor %}
             </select>
-            <input type="submit" value="Submit to launch prediction" align="middle"/>
+            <input type="submit" value="Submit to launch prediction" align="middle" style="height: 30px"/>
         </form>
        <br>
        <img src="{{ url_for('static', filename='fvt_logo.png') }}" height="256" width="512"/>
