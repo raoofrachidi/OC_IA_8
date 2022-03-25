@@ -40,7 +40,7 @@ def predict():
         return K.relu(x, max_value=6)
 
     model = tf.keras.models.load_model(
-        'model/mobilenet_segnet.h5', custom_objects={'dice_coeff': dice_coeff, 'accuracy': 'accuracy', 'relu6': relu6}
+        'model/model.h5', custom_objects={'dice_coeff': dice_coeff, 'accuracy': 'accuracy', 'relu6': relu6}
     )
 
     # Load and process mask
