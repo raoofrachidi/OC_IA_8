@@ -16,7 +16,7 @@ Votre rôle est de concevoir un premier modèle de segmentation d’images qui d
 
 Lors d’une première phase de cadrage, vous avez récolté les avis de Franck et Laura, qui travaillent sur les parties avant et après votre intervention :
 Franck, en charge du traitement des images (2) :
-* Le jeu de données que Franck utilise est disponible à ce lien (ou en téléchargement direct à ces liens : 1, 2) (images segmentées et annotées de caméras embarquées). On a uniquement besoin des 8 catégories principales (et non pas des 32 sous-catégories)
+* Le jeu de données que Franck utilise est disponible à ce lien (https://www.cityscapes-dataset.com/dataset-overview/) (images segmentées et annotées de caméras embarquées). On a uniquement besoin des 8 catégories principales (et non pas des 32 sous-catégories)
 * Les images en entrée peuvent changer. Le système d’acquisition n’est pas stable. 
 * Le volume de données sera vite important.
 Laura, en charge du système de décision (4)
